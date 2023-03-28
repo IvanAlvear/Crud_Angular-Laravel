@@ -1,0 +1,31 @@
+<br>
+<div class="title"><h1>crud para agregar, editar o eliminar usuarios</h1></div>
+<br>
+<div class="container mt-3">
+    <h2>Ver lista de usuarios</h2>
+    <p>Los usuarios que se listan acontinuación son los que estan registrados en el crud:</p><br>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Correo Electronico</th>
+          <th>Celular</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuarios of usuarios">
+          <td>{{usuarios.id}}</td>
+          <td>{{usuarios.name}}</td>
+          <td>{{usuarios.email}}</td>
+          <td>{{usuarios.phone}}</td>
+          <td> <a  class="btn btn-primary btn-sn" routerLink="/form/{{usuarios.id}}">Editar usuario</a></td>
+          <td> <a  class="btn btn-danger btn-sn" (click)="usuarios.id !== undefined && delete(usuarios.id)">Eliminar usuario</a></td>
+
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>

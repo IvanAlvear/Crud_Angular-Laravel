@@ -1,0 +1,25 @@
+<div action="/action_page.php" class="was-validated">
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Nombre:</label>
+      <input [(ngModel)]="usuarios.name" type="text" class="form-control" id="uname" placeholder="Ingresa el nombre" name="uname" required>
+      <div class="valid-feedback">Validar.</div>
+      <div class="invalid-feedback">Ingrese su nombre.</div>
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Correo:</label>
+      <input [(ngModel)]="usuarios.email"  type="email" class="form-control" id="pwd" placeholder="Ingresa el Correo electronico" name="pswd" required>
+      <div class="valid-feedback">Validar.</div>
+      <div class="invalid-feedback">Ingrese el correo.</div>
+    </div>
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Celular:</label>
+        <input [(ngModel)]="usuarios.phone" type="number" class="form-control" id="pwd" placeholder="Ingresa el Correo electronico" name="pswd" required>
+        <div class="valid-feedback">Validar.</div>
+        <div class="invalid-feedback">Ingrese el número de celular.</div>
+      </div>
+  
+
+      <button (click)="saveUsuarios()" class="btn btn-primary">Enviar</button>
+
+  </div>
+  

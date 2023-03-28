@@ -1,0 +1,14 @@
+body{
+    margin: 0; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ h1{
+     font-size: 30px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #d82831;
+     text-align: center;
+     font-weight: bold;
+     letter-spacing: 5px;
+     /* text-shadow: 2px 4px #4c1089; */
+ }
+ 
